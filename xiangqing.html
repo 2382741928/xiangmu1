@@ -5,10 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="xiangqing.html">
-    <link rel="stylesheet" href="public.html">
+    <script type="text/javascript" src="gm/num-alignment.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 </head>
-<body>
+<link rel="stylesheet" href="xiangqing.css">
+    <link rel="stylesheet" href="public.css">
     
+<body>
+        <script type="text/javascript" src="gm/jquery.js"> </script>
+    <div id="top">
+        <div class="top">
+            <ul>
+                <li><a href="http://localhost/zhangjian/shouye.html">首页</a></li>
+                <li><span>&gt;</span></li>
+                <li><p>手机</p></li>
+                <li><span>&gt;</span></li>
+                <li><p>华为</p></li>
+                <li><span>&gt;</span></li>
+                <li><p>荣耀20</p></li>
+            </ul>            
+        </div>
+    </div>
+    <div id="main">
+        <div class="main">
+            <div class="left">
+                    <div class="small_box" onmouseover="yiru()" onmouseout="yiru2()">
+                            <span class="mask"></span>
+                            <span class="float_layer" ></span>
+                            <img src="gm/1huawei.jpg">
+                   </div>
+                <div class="big_box" id="big">
+                    <img src="gm/1huawei.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <h3>荣耀手机荣耀20全网通8GB+128G幻夜黑套装1</h3>
+                <div class="price">
+                   <ul>
+                       <li><h3>国美价</h3></li>
+                       <li><h4>￥</h4></li>
+                       <li id="gmprice"><span>998</span></li>
+                   </ul>
+                    
+                </div>
+                <div class="suibian"></div>
+                <div class="car">
+                        <input id="shu" user_data="test" value="0"/>
+                        <a href="">我的购物车</a>
+                        <input type="submit" id="push" value="加入购物车">
+                        
+                        
+                        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+            // 自定义类型：参数为数组，可多条数据
+            alignmentFns.createType([{"test": {"step" : 10, "min" : 10, "max" : 999, "digit" : 0}}]);
+            
+            // 初始化
+            alignmentFns.initialize();
+            
+            // 销毁
+            alignmentFns.destroy();
+            
+            // js动态改变数据
+            $("#4").attr("data-max", "12")
+            // 初始化
+            alignmentFns.initialize();
+            
+        </script>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+        function yiru() {
+            document.getElementById("big").style = "display:block";
+        }
+
+        function yiru2() {
+            document.getElementById("big").style = "display:none";
+        }
+    </script>
+<script>
+    
+$(".mask").mousemove(function(e) {
+    var l = e.pageX - $(".small_box").offset().left - ($(".float_layer").width() / 2)
+    var t = e.pageY - $(".small_box").offset().left - ($(".float_layer").height() / 2)
+    if (l < 0) {
+        l = 0
+    }
+    if (l > $(this).width() - $(".float_layer").width()) {
+        l = $(this).width() - $(".float_layer").width()
+    }
+    if (t < 0) {
+        t = 0
+    }
+    if (t > $(this).height() - $(".float_layer").height()) {
+        t = $(this).height() - $(".float_layer").height()
+    }
+
+    $(".float_layer").css({
+        "left": l,
+        "top": t
+    })
+    var pX = l / ($(".mask").width() - $(".float_layer").width())
+    var pY = t / ($(".mask").height() - $(".float_layer").height())
+    $(".big_box img").css({
+        "left": -pX * ($(".big_box img").width() - $(".big_box").width()),
+        "top": -pY * ($(".big_box img").height() - $(".big_box").height())
+    })
+
+
+
+})
+
+</script>
+
 </html>
