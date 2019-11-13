@@ -256,7 +256,7 @@ position: relative;}
 /* 楼层 */
 #elevator{height: 150px;width: 65px;border: 1px solid #888;position: fixed;
     left: 83.6px;
-    top: 41px;}
+    top: 41px; display: none;}
 #elevator p{height: 30px;background: #f6f6f6;
     color: #5e5e5e;
     font-size: 13px;

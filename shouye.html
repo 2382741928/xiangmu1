@@ -1,1100 +1,1107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-   
-<link rel="stylesheet" href="shouye.css">
+
+    <link rel="stylesheet" href="shouye.css">
 </head>
 
 <body>
-        <script type="text/javascript" src="gm/jquery.js"> </script>     
-<div id="top">
-    <div class="top">
-        <div class="t-l">
-            <ul>
-                <li class="hui"><p>美团会员</p></li>
-                <script>
-                    
-                    $(".hui").hover(function(){document.getElementById("huiyuan").style="display:block";
-                    
-                     }, function(){
-        
-                        document.getElementById("huiyuan").style="display:none"; })
+    <script type="text/javascript" src="gm/jquery.js"> </script>
+    <div id="top">
+        <div class="top">
+            <div class="t-l">
+                <ul>
+                    <li class="hui">
+                        <p>美团会员</p>
+                    </li>
+                    <script>
+                        $(".hui").hover(function () {
+                            document.getElementById("huiyuan").style = "display:block";
+
+                        }, function () {
+
+                            document.getElementById("huiyuan").style = "display:none";
+                        })
                     </script>
-                <li><a href="">登录</a></li>
-                <li><a href="">注册有礼</a></li>
-            </ul>
-        </div>
-        <div class="t-r">
-            <ul>
-                <li><img src="gm/zj.png" alt=""><a href="">手机国美</a></li>
-                <li><a href="">网站导航</a></li>
-                <li><img src="gm/zr.png" alt=""><a href="">服务中心</a></li>
-                <li><a href="">企业采购</a></li>
-                <li><a href="">我的国美</a></li>
-                <li><a href="">我的订单</a></li>
-            </ul>
-        </div>
-        
-        <div id="huiyuan" onmouseover="yiru()" onmouseout="yiru2()">
+                    <li><a href="">登录</a></li>
+                    <li><a href="">注册有礼</a></li>
+                </ul>
+            </div>
+            <div class="t-r">
+                <ul>
+                    <li><img src="gm/zj.png" alt=""><a href="">手机国美</a></li>
+                    <li><a href="">网站导航</a></li>
+                    <li><img src="gm/zr.png" alt=""><a href="">服务中心</a></li>
+                    <li><a href="">企业采购</a></li>
+                    <li><a href="">我的国美</a></li>
+                    <li><a href="">我的订单</a></li>
+                </ul>
+            </div>
+
+            <div id="huiyuan" onmouseover="yiru()" onmouseout="yiru2()">
                 <script>
-                function yiru(){
-                    document.getElementById("huiyuan").style="display:block";
-                }
-                function yiru2(){
-                    document.getElementById("huiyuan").style="display:none";
-                }
+                    function yiru() {
+                        document.getElementById("huiyuan").style = "display:block";
+                    }
+
+                    function yiru2() {
+                        document.getElementById("huiyuan").style = "display:none";
+                    }
                 </script>
-            <div class="name">
-                <i><img src="gm/touxiang.png" alt=""></i>
-                <div>
-                    <p class="name-login">欢迎来到国美，<a  href="">请登录！</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="head">
-    <div class="head">
-        <div class="logo"><img src="gm/logo.png" alt=""></div>
-        <div class="search">
-            <div class="s-l">
-                <p>商品</p>
-                <ul>
-                   
-                    <li class="s">商品</li>
-                    <li class="s">商品</li>
-                    <li class="s">商品</li>
-                    <li class="s">商品</li>
-                </ul>
-            </div>  
-            <div class="s-r">
-                <input type="text" value="热水器" class="text"><input type="submit" value="搜索" class="sub">   
-            </div> 
-            <div class="other">
-                <ul>
-                    <li>满千减百</li>
-                    <li>满千减百</li>
-                    <li>满千减百</li>
-                    <li>满千减百</li>
-                    <li>满千减百</li>
-                </ul>
-            </div> 
-        </div>
-        <div class="car">
-            <p>我的购物车</p>
-            <span>没有商品。请去添加</span>
-        </div>
-    </div>
-    
-</div>
-<div id="nav">
-    <div class="nav">
-        <div class="shangping"><p>全部商品分类</p></div>
-        <ul>    
-            <li><a href="">发现</a></li>
-            <li><a href="">真划算</a></li>
-            <li><span>丨</span></li>
-            <li><a href="">超市</a></li>
-            <li><a href="">电器城</a></li>
-            <li><a href="">汽车</a></li>
-            <li><span>丨</span></li>
-            <li><a href="">家居家装</a></li>
-            <li><a href="">智能</a></li>
-            <li><a href="">管家</a></li>
-            <li><a href="">金融</a></li>
-        </ul>
-    </div>
-</div>
-<div id="main">
-    <div class="main">
-        <div class="aside">
-            <div class="a1" >
-                <span><a href="">手机</a><a href="">充值</a></span>
-                <div class="a1-r">
+                <div class="name">
+                    <i><img src="gm/touxiang.png" alt=""></i>
                     <div>
-                    <ul class="r1">
-                        <li><a href="">huawei</a></li>
-                        <li><a href="">oppo</a></li>
-                        <li><a href="">vivo</a></li>
-                        <li><a href="">xiaomi</a></li>
-                        <li><a href="">iphone</a></li>
-                    </ul>
-                    <ul class="r2">
-                        <li><a href="">潮3C</a></li>
-                        <li><a href="">手机</a></li>
-                        <li><a href="">数码</a></li>
-                        <li><a href="">以旧换新</a></li>
-                        <li><a href="">手机充值</a></li>
-                        <li><a href="">延保服务</a></li>
-                        <li><a href="">智享生活</a></li>
-                    </ul>
-                    <ul class="r3">
-                        <li><a href="">运营商</a></li>
-                        <li>丨</li>
-                        <li><a href="">中国移动</a></li>
-                        <li><a href="">中国联通</a></li>
-                    </ul>
-                    <ul class="r4">
-                        <li><a href="">手机配件</a></li>
-                        <li>丨</li>
-                        <li><a href="">手机壳</a></li>
-                        <li>丨</li>
-                        <li><a href="">贴膜</a></li>
-                        <li>丨</li>
-                        <li><a href="">手机存储卡</a></li>
-                        <li>丨</li>
-                        <li><a href="">数据线</a></li>
-                        <li>丨</li>
-                        <li><a href="">充电器</a></li>
-                        <li>丨</li>
-                        <li><a href="">手机耳机</a></li>
-                        <li>丨</li>
-                        <li><a href="">移动电源</a></li>  
-                    </ul>
-                    <ul class="r5">
-                        <li><a href="">充话费</a></li>
-                        <li>丨</li>
-                        <li><a href="">移动/联通/电信/极信</a></li>
-                    </ul>
-                    <ul class="r6">
-                            <li><a href="">充流量</a></li>
-                            <li>丨</li>
-                            <li><a href="">移动/联通/电信</a></li>
-                    </ul>
+                        <p class="name-login">欢迎来到国美，<a href="">请登录！</a>
+                        </p>
                     </div>
-                    <img src="gm/a1.png" alt="">
                 </div>
             </div>
-            <div class="a2  a1">
-                <span><a href="">手机</a><a href="">充值</a></span>
-                <div class="a1-r">
-                    <div>
-                        <ul class="r1">
-                            <li><a href="">huawei</a></li>
-                            <li><a href="">oppo</a></li>
-                            <li><a href="">vivo</a></li>
-                            <li><a href="">xiaomi</a></li>
-                            <li><a href="">iphone</a></li>
-                        </ul>
-                        <ul class="r2">
-                            <li><a href="">潮3C</a></li>
-                            <li><a href="">手机</a></li>
-                            <li><a href="">数码</a></li>
-                            <li><a href="">以旧换新</a></li>
-                            <li><a href="">手机充值</a></li>
-                            <li><a href="">延保服务</a></li>
-                            <li><a href="">智享生活</a></li>
-                        </ul>
-                        <ul class="r3">
-                            <li><a href="">运营商</a></li>
-                            <li>丨</li>
-                            <li><a href="">中国移动</a></li>
-                            <li><a href="">中国联通</a></li>
-                        </ul>
-                        
-                        <ul class="r5">
-                            <li><a href="">充话费</a></li>
-                            <li>丨</li>
-                            <li><a href="">移动/联通/电信/极信</a></li>
-                        </ul>
-                        <ul class="r6">
+        </div>
+    </div>
+    <div id="head">
+        <div class="head">
+            <div class="logo"><img src="gm/logo.png" alt=""></div>
+            <div class="search">
+                <div class="s-l">
+                    <p>商品</p>
+                    <ul>
+
+                        <li class="s">商品</li>
+                        <li class="s">商品</li>
+                        <li class="s">商品</li>
+                        <li class="s">商品</li>
+                    </ul>
+                </div>
+                <div class="s-r">
+                    <input type="text" value="热水器" class="text"><input type="submit" value="搜索" class="sub">
+                </div>
+                <div class="other">
+                    <ul>
+                        <li>满千减百</li>
+                        <li>满千减百</li>
+                        <li>满千减百</li>
+                        <li>满千减百</li>
+                        <li>满千减百</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="car">
+                <p>我的购物车</p>
+                <span>没有商品。请去添加</span>
+            </div>
+        </div>
+
+    </div>
+    <div id="nav">
+        <div class="nav">
+            <div class="shangping">
+                <p>全部商品分类</p>
+            </div>
+            <ul>
+                <li><a href="">发现</a></li>
+                <li><a href="">真划算</a></li>
+                <li><span>丨</span></li>
+                <li><a href="">超市</a></li>
+                <li><a href="">电器城</a></li>
+                <li><a href="">汽车</a></li>
+                <li><span>丨</span></li>
+                <li><a href="">家居家装</a></li>
+                <li><a href="">智能</a></li>
+                <li><a href="">管家</a></li>
+                <li><a href="">金融</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main">
+            <div class="aside">
+                <div class="a1">
+                    <span><a href="">手机</a><a href="">充值</a></span>
+                    <div class="a1-r">
+                        <div>
+                            <ul class="r1">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
                                 <li><a href="">充流量</a></li>
                                 <li>丨</li>
                                 <li><a href="">移动/联通/电信</a></li>
-                        </ul>
+                            </ul>
+                        </div>
+                        <img src="gm/a1.png" alt="">
                     </div>
-                    <img src="gm/a2.png" alt="">
-                    </div>
-                
-            </div>
-            <div class="a3  a1">
+                </div>
+                <div class="a2  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                </ul>
-                                </div>
-                                <img src="gm/a2.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a4  a1">
+
+                </div>
+                <div class="a3  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a1.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a5  a1">
+                </div>
+                <div class="a4  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a2.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a1.png" alt="">
                     </div>
-            </div>
-            <div class="a6  a1">
+                </div>
+                <div class="a5  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a3.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a7  a1">
+                </div>
+                <div class="a6  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                        <li><a href="">潮3C</a></li>
-                                        <li><a href="">手机</a></li>
-                                        <li><a href="">数码</a></li>
-                                        <li><a href="">以旧换新</a></li>
-                                        <li><a href="">手机充值</a></li>
-                                        <li><a href="">延保服务</a></li>
-                                        <li><a href="">智享生活</a></li>
-                                    </ul>
-                                    <ul class="r3">
-                                        <li><a href="">运营商</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">中国移动</a></li>
-                                        <li><a href="">中国联通</a></li>
-                                    </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a2.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a3.png" alt="">
                     </div>
-            </div>
-            <div class="a8  a1">
+                </div>
+                <div class="a7  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                               
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a1.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a9  a1">
+                </div>
+                <div class="a8  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a2.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a1.png" alt="">
                     </div>
-            </div>
-            
-            <div class="a10  a1">
+                </div>
+                <div class="a9  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a3.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a11  a1">
+                </div>
+
+                <div class="a10  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r2">
-                                        <li><a href="">潮3C</a></li>
-                                        <li><a href="">手机</a></li>
-                                        <li><a href="">数码</a></li>
-                                        <li><a href="">以旧换新</a></li>
-                                        <li><a href="">手机充值</a></li>
-                                        <li><a href="">延保服务</a></li>
-                                        <li><a href="">智享生活</a></li>
-                                    </ul>
-                                    <ul class="r3">
-                                        <li><a href="">运营商</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">中国移动</a></li>
-                                        <li><a href="">中国联通</a></li>
-                                    </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a2.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a3.png" alt="">
                     </div>
-            </div>
-            <div class="a12  a1">
+                </div>
+                <div class="a11  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    <ul class="r3">
-                                            <li><a href="">运营商</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">中国移动</a></li>
-                                            <li><a href="">中国联通</a></li>
-                                        </ul>
-                                        <ul class="r4">
-                                            <li><a href="">手机配件</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">手机壳</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">贴膜</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">手机存储卡</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">数据线</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">充电器</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">手机耳机</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">移动电源</a></li>  
-                                        </ul>
-                                        </div>
-                                        <img src="gm/a1.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a13  a1">
+                </div>
+                <div class="a12  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a2.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a1.png" alt="">
                     </div>
-            </div>
-            <div class="a14  a1">
+                </div>
+                <div class="a13  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                        <li><a href="">充话费</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信/极信</a></li>
-                                    </ul>
-                                    <ul class="r6">
-                                            <li><a href="">充流量</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">移动/联通/电信</a></li>
-                                        </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                    </ul>
-                                    </div>
-                                    <img src="gm/a3.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a2.png" alt="">
                     </div>
-            </div>
-            <div class="a15  a1">
+                </div>
+                <div class="a14  a1">
                     <span><a href="">手机</a><a href="">充值</a></span>
                     <div class="a1-r">
                         <div>
                             <ul class="r1">
-                                    <li><a href="">huawei</a></li>
-                                    <li><a href="">oppo</a></li>
-                                    <li><a href="">vivo</a></li>
-                                    <li><a href="">xiaomi</a></li>
-                                    <li><a href="">iphone</a></li>
-                                </ul>
-                                <ul class="r2">
-                                    <li><a href="">潮3C</a></li>
-                                    <li><a href="">手机</a></li>
-                                    <li><a href="">数码</a></li>
-                                    <li><a href="">以旧换新</a></li>
-                                    <li><a href="">手机充值</a></li>
-                                    <li><a href="">延保服务</a></li>
-                                    <li><a href="">智享生活</a></li>
-                                </ul>
-                                <ul class="r3">
-                                    <li><a href="">运营商</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">中国移动</a></li>
-                                    <li><a href="">中国联通</a></li>
-                                </ul>
-                                <ul class="r4">
-                                        <li><a href="">手机配件</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">手机壳</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">贴膜</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">手机存储卡</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">数据线</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">充电器</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">手机耳机</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动电源</a></li>  
-                                    </ul>
-                                    <ul class="r5">
-                                        <li><a href="">充话费</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信/极信</a></li>
-                                    </ul>
-                                    <ul class="r6">
-                                            <li><a href="">充流量</a></li>
-                                            <li>丨</li>
-                                            <li><a href="">移动/联通/电信</a></li>
-                                        </ul>
-                        
-                                <ul class="r4">
-                                    <li><a href="">手机配件</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机壳</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">贴膜</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机存储卡</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">数据线</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">充电器</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">手机耳机</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动电源</a></li>  
-                                </ul>
-                                <ul class="r5">
-                                    <li><a href="">充话费</a></li>
-                                    <li>丨</li>
-                                    <li><a href="">移动/联通/电信/极信</a></li>
-                                </ul>
-                                <ul class="r6">
-                                        <li><a href="">充流量</a></li>
-                                        <li>丨</li>
-                                        <li><a href="">移动/联通/电信</a></li>
-                                </ul>
-                                </div>
-                                <img src="gm/a1.png" alt="">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a3.png" alt="">
                     </div>
+                </div>
+                <div class="a15  a1">
+                    <span><a href="">手机</a><a href="">充值</a></span>
+                    <div class="a1-r">
+                        <div>
+                            <ul class="r1">
+                                <li><a href="">huawei</a></li>
+                                <li><a href="">oppo</a></li>
+                                <li><a href="">vivo</a></li>
+                                <li><a href="">xiaomi</a></li>
+                                <li><a href="">iphone</a></li>
+                            </ul>
+                            <ul class="r2">
+                                <li><a href="">潮3C</a></li>
+                                <li><a href="">手机</a></li>
+                                <li><a href="">数码</a></li>
+                                <li><a href="">以旧换新</a></li>
+                                <li><a href="">手机充值</a></li>
+                                <li><a href="">延保服务</a></li>
+                                <li><a href="">智享生活</a></li>
+                            </ul>
+                            <ul class="r3">
+                                <li><a href="">运营商</a></li>
+                                <li>丨</li>
+                                <li><a href="">中国移动</a></li>
+                                <li><a href="">中国联通</a></li>
+                            </ul>
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+
+                            <ul class="r4">
+                                <li><a href="">手机配件</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机壳</a></li>
+                                <li>丨</li>
+                                <li><a href="">贴膜</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机存储卡</a></li>
+                                <li>丨</li>
+                                <li><a href="">数据线</a></li>
+                                <li>丨</li>
+                                <li><a href="">充电器</a></li>
+                                <li>丨</li>
+                                <li><a href="">手机耳机</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动电源</a></li>
+                            </ul>
+                            <ul class="r5">
+                                <li><a href="">充话费</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信/极信</a></li>
+                            </ul>
+                            <ul class="r6">
+                                <li><a href="">充流量</a></li>
+                                <li>丨</li>
+                                <li><a href="">移动/联通/电信</a></li>
+                            </ul>
+                        </div>
+                        <img src="gm/a1.png" alt="">
+                    </div>
+                </div>
+
             </div>
-                
-        </div>
-        <div class="box banner ">
-            <div class="imgbox">
-                <img src="gm/b1.jpg" alt="">
-                <img src="gm/b2.jpg" alt="">
-                <img src="gm/b4.jpg" alt="">
-                <img src="gm/b5.jpg" alt="">
-                <img src="gm/b6.jpg" alt="">
-                <img src="gm/b7.jpg" alt="">
-                <img src="gm/b8.jpg" alt="">
+            <div class="box banner ">
+                <div class="imgbox">
+                    <img src="gm/b1.jpg" alt="">
+                    <img src="gm/b2.jpg" alt="">
+                    <img src="gm/b4.jpg" alt="">
+                    <img src="gm/b5.jpg" alt="">
+                    <img src="gm/b6.jpg" alt="">
+                    <img src="gm/b7.jpg" alt="">
+                    <img src="gm/b8.jpg" alt="">
+                </div>
+                <div class="btns">
+                    <input type="button" id="left" value="<">
+                    <input type="button" id="right" value=">">
+                </div>
             </div>
-            <div class="btns">
-                <input type="button" id="left" value="<">
-                <input type="button" id="right" value=">">
-            </div>
-        </div>
-        <div class="pb">
-            <div class="top">
-                <p>快讯</p>
-                <a href="">更多&gt;&gt;</a>
-            </div>
-            <div class="center">
-                <ul>
-                    <li><a href="">特惠</a><a>原价998，现价999</a></li>
-                    <li><a href="">特惠</a><a>原价998，现价999</a></li>
-                    <li><a href="">特惠</a><a>原价998，现价999</a></li>
-                    <li><a href="">特惠</a><a>原价998，现价999</a></li>
-                </ul>
-            </div>
-            <div class="bottom">
-                <img src="gm/bp.png" alt="">
+            <div class="pb">
+                <div class="top">
+                    <p>快讯</p>
+                    <a href="">更多&gt;&gt;</a>
+                </div>
+                <div class="center">
+                    <ul>
+                        <li><a href="">特惠</a><a>原价998，现价999</a></li>
+                        <li><a href="">特惠</a><a>原价998，现价999</a></li>
+                        <li><a href="">特惠</a><a>原价998，现价999</a></li>
+                        <li><a href="">特惠</a><a>原价998，现价999</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <img src="gm/bp.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="floor">
-    <div class="floor">
-        <div class="f1 f">
-            <p>小米</p>
-            <div class="xm">
-                <div class="xm-l">
-                    <img src="gm/xiaomihuichang.png" alt="">
-                    <ul class="c1">
-                        <li>
-                            <a href="">手机</a><span>/</span><a href="">手机</a><span>/</span><a href="">手机</a>
-                        </li>
-                    </ul>
-                    <ul class="c2">
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        <li><a href="">小米</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="xm-c">
-                    <img src="gm/xiaomi.jpg" alt="">
-                </div>
-                <div class="xm-r">
-                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
-                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
-                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
-                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
-                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
-                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+    <div id="floor">
+        <div class="floor">
+            <div class="f1 f">
+                <p>小米</p>
+                <div class="xm">
+                    <div class="xm-l">
+                        <img src="gm/xiaomihuichang.png" alt="">
+                        <ul class="c1">
+                            <li>
+                                <a href="">手机</a><span>/</span><a href="">手机</a><span>/</span><a href="">手机</a>
+                            </li>
+                        </ul>
+                        <ul class="c2">
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+                            <li><a href="">小米</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="xm-c">
+                        <img src="gm/xiaomi.jpg" alt="">
+                    </div>
+                    <div class="xm-r">
+                        <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                        <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                        <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                        <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                        <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                        <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="f2 f">
+            <div class="f2 f">
                 <p>oppo</p>
                 <div class="xm">
                     <div class="xm-l">
@@ -1120,8 +1127,8 @@
                             <li><a href="">oppo</a></li>
                             <li><a href="">oppo</a></li>
                             <li><a href="">oppo</a></li>
-                            
-                            
+
+
                         </ul>
                     </div>
                     <div class="xm-c">
@@ -1138,94 +1145,104 @@
                 </div>
             </div>
             <div class="f3 f">
-                    <p>iphone</p>
-                    <div class="xm">
-                        <div class="xm-l">
-                            <img src="gm/3l.png" alt="">
-                            <ul class="c1">
-                                <li>
-                                    <a href="">手机</a><span>/</span><a href="">手机</a><span>/</span><a href="">手机</a>
-                                </li>
-                            </ul>
-                            <ul class="c2">
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                <li><a href="">iphone</a></li>
-                                
-                                
-                            </ul>
-                        </div>
-                        <div class="xm-c">
-                            <img src="gm/lita.jpg" alt="">
-                        </div>
-                        <div class="xm-r">
-                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
-                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
-                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
-                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
-                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
-                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
-                        </div>
+                <p>iphone</p>
+                <div class="xm">
+                    <div class="xm-l">
+                        <img src="gm/3l.png" alt="">
+                        <ul class="c1">
+                            <li>
+                                <a href="">手机</a><span>/</span><a href="">手机</a><span>/</span><a href="">手机</a>
+                            </li>
+                        </ul>
+                        <ul class="c2">
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+                            <li><a href="">iphone</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="xm-c">
+                        <img src="gm/lita.jpg" alt="">
+                    </div>
+                    <div class="xm-r">
+                        <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                        <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                        <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                        <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                        <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                        <a href=""><img src="gm/iphone.jpg" alt=""></a>
                     </div>
                 </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<!-- 楼层 -->
-<div id="elevator">
-    <p>楼层导航</p>
-    <ul>
-        <li>huawei</li>
-        <li>oppo</li>
-        <li>iphone</li>
-    </ul>
     <!-- 楼层 -->
-<script>
+    <div id="elevator">
+        <p>楼层导航</p>
+        <ul>
+            <li>huawei</li>
+            <li>oppo</li>
+            <li>iphone</li>
+        </ul>
+        <!-- 楼层 -->
+        <script>
+            $("ul").children("li").click(function () {
+                var i = $(this).index();
 
-        $("ul").children("li").click(function(){
-            var i = $(this).index();
-    
-            var now = $(".f").eq(i);
-            
-            var t = now.offset().top;
-    
-            $("html").animate({
-                scrollTop:t
+                var now = $(".f").eq(i);
+
+                var t = now.offset().top;
+
+                $("html").animate({
+                    scrollTop: t
+                })
             })
-        })
-    
-    </script>
-</div>
+        </script>
+    </div>
 </body>
-<script src="../jquery.js"></script>
-<script  type="text/javascript" src="gm/jquery.banner.1.2.js"></script>
+<script src="gm/jquery.js"></script>
+<script type="text/javascript" src="gm/jquery.banner.1.2.js"></script>
 <script>
     $(".banner").banner({
-        imgs:$(".banner").find("img"),     //必传
-        left:$(".banner").find("#left"),   //左按钮，可选
-        right:$(".banner").find("#right"), //右按钮，可选
-        list:false,         //是否要小圆圈，可选，默认要
-        autoPlay:false,     //是否要自动播放，可选，默认要
-        delayTime:2000,     //可选的，图片播放间隔时间
-        moveTime:200,       //可选的，图片移动的时间
-        listBgColor:"green"
-    }) 
+        imgs: $(".banner").find("img"), //必传
+        left: $(".banner").find("#left"), //左按钮，可选
+        right: $(".banner").find("#right"), //右按钮，可选
+        list: false, //是否要小圆圈，可选，默认要
+        autoPlay: false, //是否要自动播放，可选，默认要
+        delayTime: 2000, //可选的，图片播放间隔时间
+        moveTime: 200, //可选的，图片移动的时间
+        listBgColor: "green"
+    });
     $(".banner").banner({
-        imgs:$(".banner").find("img"),     //必传
-    })
+        imgs: $(".banner").find("img"), //必传
+    });
+    $(document).ready(function () {
+        $(window).scroll(function () { //获得滚动条距离顶部的高度
+            if ($(window).scrollTop() > 640) {
+                document.getElementById("elevator").style = "display:block";
+
+            } else {
+                document.getElementById("elevator").style = "display:none";
+            }
+        })
+    });
 </script>
+
+<!-- 登录 -->
 
 
 </html>

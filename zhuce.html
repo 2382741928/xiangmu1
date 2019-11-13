@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="zhuce.css">
+    <link rel="stylesheet" href="public.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="gm/jquery.js"> </script>
+
+    <div id="top">
+        <div class="top">
+            <img src="gm/zhuce.png" alt="">
+            <p>我已经注册，现在就<a href="http://localhost/zhangjian/denglu.html">登录</a></p>
+        </div>
+        <div id="form">
+            <input type="text" id="username" value="请输入姓名"><br>
+            <input type="text" id="password" value="请输入密码"><br>
+            <input type="submit" id="sub" value="提交">
+        </div>
+    </div>
+</body>
+
+
+<script>
+if(window.localStorage.userArr){
+    //判断是否存在        
+    var array = JSON.parse(window.localStorage.userArr);    
+}else{        
+    array = [];//创建一个新数组    
+}
+
+$("#sub").click(function(){
+    var username = $("#username").val();        
+    var password = $("#password").val();    
+    //遍历数组进行匹配        
+    for(var i =0;i<array.length;i++){            
+        //判断是否有相同账号            
+        if(username==array[i].username){                
+            alert("该账号已存在");
+            window.location.href="http://localhost/zhangjian/denglu.html";
+            return;            
+        }        
+    }
+    //创建对象        
+    var obj = {
+        username:username,password:password
+    }
+    array.push(obj);        
+    window.localStorage.userArr=JSON.stringify(array);    
+    alert("用户创建成功");    
+    window.location.href="http://localhost/zhangjian/denglu.html"; 
+})</script>
+</html>
