@@ -207,7 +207,7 @@ position: relative;}
 /* 轮播图 */
 #main .main .banner{height: 450px;width: 750px;overflow: hidden;position: relative;float: left;}
 #main .main .banner .imgbox img{width: 750px;height: 450px;position: absolute;left:750px}
-
+#main .main .banner .imgbox img:first-child{left: 0;}
 #main .main .banner .imgbox{width: 7000px;}
 
 #main .main .banner .btns input{width:40px;height:80px;border:none;background: rgba(200,200,200,0.6);position: absolute;top:150px;
