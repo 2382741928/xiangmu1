@@ -1,0 +1,33 @@
+
+#top{height: 30px;background: #f8f8f8;}
+#top .top{width: 990px;height: 30px;margin: 0 auto;position: relative;;}
+#top .top .t-l ul li{float: left;color: #5e5e5e;font: 12px/30px "";}
+#top .top .t-l ul li:last-child a{color:#ff0027}
+#top .top .t-l ul li a{color:#5e5e5e;margin-right: 10px;}
+#top .top .t-l ul li p{margin-right: 20px;margin-left: 5px;}
+
+#top .top .t-r ul li{float: right;color: #5e5e5e;font: 12px/30px "";margin:0 10px ;}
+#top .top .t-r ul li a{color:#5e5e5e;}
+#top .top ul li a:hover{color:#ff0027}
+
+
+#logo{height: 120px;}
+#logo .logo{width: 990px;height: 120px;margin:0 auto;}
+#logo .logo img{width: 370px;height: 120px;}
+
+#car{}
+#car .car1{width: 990px;border: 1px solid #e6e6e6;margin:0 auto;}
+#car .car1 .null{height: 170px;overflow: hidden;display: none;}
+#car .car1 .null img{margin-top:30px;margin-left: 300px;float: left;}
+#car .car1 .null p{font-size: 12px;margin-top: 70px;margin-left: 20px;float: left;color: #333;}
+
+
+
+
+
+
+
+
+
+
+
