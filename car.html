@@ -5,13 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" href="car.css">
     <link rel="stylesheet" href="public.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-<link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 <body>
-        <script type="text/javascript" src="gm/jquery.js"> </script>
+    <script>
+    function ajaxGet(url, cb, data) {
+        data = data || {};
+        var str = "";
+        for (var i in data) {
+            str += `${i}=${data[i]}&`;
+        }
+        var d = new Date();
+        url = url + "?" + str + "__qft=" + d.getTime();
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                cb(xhr.responseText)
+            }
+        }
+        xhr.send();
+    }
+    ajaxGet('http://localhost/zhangjian/gm/goods.json', function (a) {
+        var res = JSON.parse(a);
+        var car = JSON.parse(window.localStorage.getItem("shopCar"));
+        for(let i=0;i<res.length;i++) {
+            for(var s = 0;s<car.length;s++){
+                if( car[s].id==res[i].idx){
+
+                }
+            }
+        }
+
+        
+    })
+    
+    </script>
+
+        
         
     <div id="top">
         <div class="top">
@@ -20,15 +55,7 @@
                     <li class="hui">
                         <p>美团会员</p>
                     </li>
-                    <script>
-                        $(".hui").hover(function () {
-                            document.getElementById("huiyuan").style = "display:block";
-
-                        }, function () {
-
-                            document.getElementById("huiyuan").style = "display:none";
-                        })
-                    </script>
+                    
                     <li><a href="http://localhost/zhangjian/denglu.html">登录</a></li>
                     <li><a href="http://localhost/zhangjian/zhuce.html">注册有礼</a></li>
                 </ul>
@@ -50,7 +77,7 @@
     </div>
     <div id="logo">
         <div class="logo">
-            <img src="gm/car.png" alt="">
+            <a href="http://localhost/zhangjian/shouye.html"><img src="gm/car.png" alt=""></a>
         </div>
     </div>
     <div id="car">
@@ -158,11 +185,24 @@
                 </div>
             </div>
             
-            <script type="text/javascript" src="gm/jquery.min1.js"></script>
-            <script type="text/javascript" src="gm/script1.js"></script>
+            
             <div style="text-align:center;margin:-50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
             
             </div>
     </div>
 </body>
+
+<!-- <script type="text/javascript" src="gm/jquery.min1.js"></script> -->
+<script type="text/javascript" src="gm/jquery.js"> </script>
+<script type="text/javascript" src="gm/ajax.js"></script>
+            <script type="text/javascript" src="gm/script1.js"></script>
+            <script>
+                    $(".hui").hover(function () {
+                        document.getElementById("huiyuan").style = "display:block";
+
+                    }, function () {
+
+                        document.getElementById("huiyuan").style = "display:none";
+                    })
+                </script>
 </html>

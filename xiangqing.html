@@ -54,29 +54,7 @@
             }
         }
     })
-    // if (list == "app") {
-    //     // console.log(1);
-    //     ajaxGet('http://localhost/zhangjian/gm/goods.json', function (a) {
-    //         var res = JSON.parse(a);
-
-
-    //         // var nowImg = document.querySelector(".small_box img");
-    //     });
-    //     //     $(function () {
-    //     //         $.ajax({
-    //     //             url: 'http://localhost/zhangjian/gm/goods.json',
-    //     //             type: 'get',
-    //     //             dataType: 'json',
-    //     //             success: function (a, b, c) {
-    //     //                 //         $.get("http://localhost/zhangjian/shouye.html",
-    //     //                 // function(img){
-
-    //     //                 // var jsonimg = img;
-    //     //                 console.log(a, b, c);
-    //     //             }
-    //     //         })
-    //     //     })
-    // }
+    
 </script>
 
 <body>
@@ -126,10 +104,14 @@
                     </ul>
 
                 </div>
-                <div class="suibian"></div>
+                <div class="suibian">
+                    <ul>
+                        <li><span>特色</span><span>以舊換新</span><span>管家服務</span><span>國美智能</span></li>
+                    </ul>
+                </div>
                 <div class="car">
                     <input id="shu" user_data="test" value="0" />
-                    <a href="">我的购物车</a>
+                    <a href="http://localhost/zhangjian/car.html">我的购物车</a>
                     <input type="submit" id="push" value="加入购物车">
 
 
@@ -160,6 +142,26 @@
         $("#4").attr("data-max", "12")
         // 初始化
         alignmentFns.initialize();
+    </script>
+    <script>
+        $("#push").click(function () {
+            var obj = {
+                shu: $("#shu").val(),
+                id: localStorage.getItem("listId")
+            }
+            var isHere = false;
+            var shopCarRes = JSON.parse(localStorage.getItem("shopCar")) || [];
+            for (let i = 0; i < shopCarRes.length; i++) {
+                if (shopCarRes[i].id == obj.id) {
+                    isHere = true;
+                    shopCarRes[i].shu = parseInt(shopCarRes[i].shu) + parseInt(obj.shu);
+                }
+            }
+            if (!isHere) {
+                shopCarRes.push(obj);
+            }
+            localStorage.setItem("shopCar", JSON.stringify(shopCarRes));
+        })
     </script>
 
 </body>

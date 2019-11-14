@@ -1,71 +1,131 @@
-var goodsList = [{
-		id: 1234564876,
-		imgUrl: 'img/1.png',
-		goodsInfo: '号地块健身房回复的科技示范户快速坚实的看了看大家发快递了很费劲的开始放假',
-		goodsParams: '四季度后付款的酸辣粉',
-		price: 199,
-		goodsCount: 1,
-		singleGoodsMoney: 199
-	},
-	{
-		id: 1234564876,
-		imgUrl: 'img/2.png',
-		goodsInfo: '号地块健身房回复的科技示范户快速坚实的看了看大家发快递了很费劲的开始放假',
-		goodsParams: '四季度后付款的酸辣粉',
-		price: 299,
-		goodsCount: 2,
-		singleGoodsMoney: 598
-	},
-	{
-		id: 1234564876,
-		imgUrl: 'img/3.png',
-		goodsInfo: '号地块健身房回复的科技示范户快速坚实的看了看大家发快递了很费劲的开始放假',
-		goodsParams: '四季度后付款的酸辣粉',
-		price: 399,
-		goodsCount: 1,
-		singleGoodsMoney: 399
-	}
-]
-var deleteGoods = null
-loadGoods()
 
-function loadGoods() {
-	$.each(goodsList, function(i, item) {
-		var goodsHtml = '<div class="goods-item">' +
-			'<div class="panel panel-default">' +
-			'<div class="panel-body">' +
-			'<div class="col-md-1 car-goods-info">' +
-			'<label><input type="checkbox" class="goods-list-item"/></label>' +
-			'</div>' +
-			'<div class="col-md-3 car-goods-info goods-image-column">' +
-			'<img class="goods-image" src="' + item.imgUrl + '" style="width: 100px; height: 100px;" />' +
-			'<span id="goods-info">' +
-			item.goodsInfo +
-			'</span>' +
-			'</div>' +
-			'<div class="col-md-3 car-goods-info goods-params">' + item.goodsParams + '</div>' +
-			'<div class="col-md-1 car-goods-info goods-price"><span>￥</span><span class="single-price">' + item.price + '</span></div>' +
-			'<div class="col-md-1 car-goods-info goods-counts">' +
-			'<div class="input-group">' +
-			'<div class="input-group-btn">' +
-			'<button type="button" class="btn btn-default car-decrease">-</button>' +
-			'</div>' +
-			'<input type="text" class="form-control goods-count" value="' + item.goodsCount + '">' +
-			'<div class="input-group-btn">' +
-			'<button type="button" class="btn btn-default car-add">+</button>' +
-			'</div>' +
-			'</div>' +
-			'</div>' +
-			'<div class="col-md-1 car-goods-info goods-money-count"><span>￥</span><span class="single-total">' + item.singleGoodsMoney + '</span></div>' +
-			'<div class="col-md-2 car-goods-info goods-operate">' +
-			'<button type="button" class="btn btn-danger item-delete">删除</button>' +
-			'</div>' +
-			'</div>' +
-			'</div>' +
-			'</div>'
-		$('.goods-content').append(goodsHtml)
-	})
+
+var deleteGoods = null
+var goodsList;
+
+function ajaxGet(url, cb, data) {
+	data = data || {};
+	var str = "";
+	for (var i in data) {
+		str += `${i}=${data[i]}&`;
+	}
+	var d = new Date();
+	url = url + "?" + str + "__qft=" + d.getTime();
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("get", url, true);
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			cb(xhr.responseText)
+		}
+	}
+	xhr.send();
 }
+// ajaxGet('http://localhost/zhangjian/gm/goods.json', function (a) {
+// 	var res = JSON.parse(a);
+// 	var car = JSON.parse(window.localStorage.getItem("shopCar"));
+// 	for(let i=0;i<res.length;i++) {
+// 		for(var s = 0;s<shopCar.length;s++){
+// 			if( shopCar[s].id==res[i].idx){
+// 				var liang=shopCar[s].num
+
+// 			}
+// 		}
+// 	}
+
+	
+// })
+
+
+
+
+
+
+
+
+
+loadGoods()
+function loadGoods() {
+q
+	ajaxGet("http://localhost/zhangjian/gm/goods.json", function (res) {
+				 goodsList = JSON.parse(res);
+				 cb(goodsList)
+				})
+	var carList = JSON.parse(localStorage.getItem("shopCar"));
+	function cb(goodsList){
+		var str = "";
+		for(var i = 0; i < goodsList.length;i++){
+			for(var c=0;c<carList.length;c++){
+				if(goodsList[i].idx==carList[c].id){
+					str += `<div class="goods-item" idx="${goodsList[i].idx}">
+						<div class="panel panel-default">
+			 			<div class="panel-body">
+			 			<div class="col-md-1 car-goods-info">
+			 			<label><input type="checkbox" class="goods-list-item"/></label>
+			 			</div>
+			 			<div class="col-md-3 car-goods-info goods-image-column">
+			 			<img class="goods-image" src="${goodsList[i].img}" style="width: 100px; height: 100px;" />
+			 		<span id="goods-info"></span>
+			 			</div>
+			 			<div class="col-md-3 car-goods-info goods-params">${goodsList[i].show}</div>
+			 			<div class="col-md-1 car-goods-info goods-price"><span>￥</span><span class="single-price"> ${goodsList[i].jiage} </span></div>
+			 			<div class="col-md-1 car-goods-info goods-counts">
+			 			<div class="input-group">
+			 			<div class="input-group-btn">
+			 			<button type="button" class="btn btn-default car-decrease">-</button>
+			 			</div>
+			 			<input type="text" class="goods-count" value="${carList[c].shu}">
+			 			<div class="input-group-btn">
+			 			<button type="button" class="btn btn-default car-add">+</button>
+			 			</div>
+			 			</div>
+			 			</div>
+			 			<div class="col-md-1 car-goods-info goods-money-count"><span>￥</span><span class="single-total">${goodsList[i].jiage*carList[c].shu}  </span></div>
+			 			<div class="col-md-2 car-goods-info goods-operate">
+			 			<button type="button" class="btn btn-danger item-delete">删除</button>
+			 			</div>
+			 			</div>
+			 			</div>
+					</div>`;
+				}
+			}
+			// str += `<div class="goods-item">
+			// 			<div class="panel panel-default">
+			//  			<div class="panel-body">
+			//  			<div class="col-md-1 car-goods-info">
+			//  			<label><input type="checkbox" class="goods-list-item"/></label>
+			//  			</div>
+			//  			<div class="col-md-3 car-goods-info goods-image-column">
+			//  			<img class="goods-image" src="${goodsList[i].img}" style="width: 100px; height: 100px;" />
+			//  		<span id="goods-info"></span>
+			//  			</div>
+			//  			<div class="col-md-3 car-goods-info goods-params">${goodsList[i].show}</div>
+			//  			<div class="col-md-1 car-goods-info goods-price"><span>￥</span><span class="single-price"> ${goodsList[i].jiage} </span></div>
+			//  			<div class="col-md-1 car-goods-info goods-counts">
+			//  			<div class="input-group">
+			//  			<div class="input-group-btn">
+			//  			<button type="button" class="btn btn-default car-decrease">-</button>
+			//  			</div>
+			//  			<input type="text" class="goods-count" value="${}">
+			//  			<div class="input-group-btn">
+			//  			<button type="button" class="btn btn-default car-add">+</button>
+			//  			</div>
+			//  			</div>
+			//  			</div>
+			//  			<div class="col-md-1 car-goods-info goods-money-count"><span>￥</span><span class="single-total">${goodsList[i].jiage}  </span></div>
+			//  			<div class="col-md-2 car-goods-info goods-operate">
+			//  			<button type="button" class="btn btn-danger item-delete">删除</button>
+			//  			</div>
+			//  			</div>
+			//  			</div>
+			// 		</div>`;
+					// $(".form-control input").eq(i).html(`${goodsList[i].count}`)
+					
+			}
+		$('.goods-content').html(str)
+	}
+		
+
 
 function ShoppingCarObserver(elInput, isAdd) {
 	this.elInput = elInput
@@ -157,6 +217,7 @@ function ShoppingCarObserver(elInput, isAdd) {
 	}
 }
 function checkedAll(_this) {
+	
 	if ($('.goods-item').length <= 0) {
 		$('.submitData').addClass('submitDis')
 	} else {
@@ -204,6 +265,15 @@ $('.goods-list-item').on('change', function() {
 	checkEvent.checkedChange()
 	checkEvent.checkIsAll()
 })
+$('.goods-content').on('click',".goods-list-item",function() {
+	var num = 0;
+	for(let i = 0; i < $('.goods-list-items').length; i++){
+		if($('.goods-list-items')[i].checked){
+			num += parseInt($(".single-total")[i].text)
+		}
+	}
+	$("#selectGoodsMoney").text(num);
+})
 $('.goods-content').on('click', '.car-decrease', function() {
 	var goodsInput = $(this).parents('.input-group').find('.goods-count')
 	var decreaseCount = new ShoppingCarObserver(goodsInput, false)
@@ -217,9 +287,14 @@ $('.goods-content').on('click', '.car-add', function() {
 	addCount.computeGoodsMoney()
 })
 $('.goods-content').on('click', '.item-delete', function() {
-	var goodsInput = $(this).parents('.goods-item').find('.goods-list-item')
-	deleteGoods = new ShoppingCarObserver(goodsInput, null)
-	$('#deleteItemTip').modal('show')
+	// var goodsInput = $(this).parents('.goods-item').find('.goods-list-item')
+	// deleteGoods = new ShoppingCarObserver(goodsInput, null)
+	// $('#deleteItemTip').modal('show')
+	
+	$(this).parent().parent().remove();
+	var idx=$(this).parent().parent().attr("idx");
+	// for(var i=0;i<)
+
 })
 $('.deleteSure').on('click', function() {
 	if(deleteGoods !== null) {
@@ -242,4 +317,4 @@ $('.deleteMultySure').on('click', function() {
 	}
 	multyDelete.checkOptions()
 	$('#deleteMultyTip').modal('hide')
-})
+})}
