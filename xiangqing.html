@@ -106,15 +106,19 @@
                 </div>
                 <div class="suibian">
                     <ul>
-                        <li><span>特色</span><span>以舊換新</span><span>管家服務</span><span>國美智能</span></li>
+                        <li><span class="ts">特&nbsp&nbsp&nbsp&nbsp色</span><span>以舊換新</span><span>管家服務</span><span>國美智能</span></li>
+                        <li><span class="ts">服&nbsp&nbsp&nbsp&nbsp务</span><span class="qt">由国美配送并提供保障监管。</span></li>
+                        <li><span class="ts">颜色</span><span>冰岛极光</span><span>碳纤黑</span><span>电光紫</span></li>
+                        <li><span class="ts">容量</span><span>6GB+64GB</span><span>6GB+128GB</span><span>8GB+128GB</span></li>
+                        <li><span class="ts">易卡分期</span><span class="qt">【易卡分期支付】0首付 30天免息 0利率</span><span class="qt">产品说明</span></li>
+
+   
                     </ul>
                 </div>
                 <div class="car">
                     <input id="shu" user_data="test" value="0" />
                     <a href="http://localhost/zhangjian/car.html">我的购物车</a>
                     <input type="submit" id="push" value="加入购物车">
-
-
 
                 </div>
             </div>
@@ -145,6 +149,7 @@
     </script>
     <script>
         $("#push").click(function () {
+            alert("添加成功")
             var obj = {
                 shu: $("#shu").val(),
                 id: localStorage.getItem("listId")

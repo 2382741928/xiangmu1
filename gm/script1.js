@@ -46,7 +46,7 @@ function ajaxGet(url, cb, data) {
 
 loadGoods()
 function loadGoods() {
-q
+
 	ajaxGet("http://localhost/zhangjian/gm/goods.json", function (res) {
 				 goodsList = JSON.parse(res);
 				 cb(goodsList)
@@ -286,6 +286,9 @@ $('.goods-content').on('click', '.car-add', function() {
 	addCount.showCount()
 	addCount.computeGoodsMoney()
 })
+
+// 删除
+
 $('.goods-content').on('click', '.item-delete', function() {
 	// var goodsInput = $(this).parents('.goods-item').find('.goods-list-item')
 	// deleteGoods = new ShoppingCarObserver(goodsInput, null)
@@ -296,6 +299,9 @@ $('.goods-content').on('click', '.item-delete', function() {
 	// for(var i=0;i<)
 
 })
+
+
+
 $('.deleteSure').on('click', function() {
 	if(deleteGoods !== null) {
 		deleteGoods.deleteGoods()

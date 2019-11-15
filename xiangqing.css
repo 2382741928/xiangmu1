@@ -70,5 +70,25 @@
 #main .main .right .car #push{height: 40px;width: 140px;background: #e3101e;float: right;border:none;color:#fff;margin-right: 20px;}
 
 
+#main .main .right .suibian{}
+#main .main .right .suibian ul li{height: 20px;font:12px/20px "";margin-top: 20px;}
+#main .main .right .suibian ul li .ts{color:#5e5e5e;margin-right: 20px;border:none}
+#main .main .right .suibian ul li{margin-right: 20px;}
+#main .main .right .suibian ul li span{padding: 3px 10px 3px 17px;border: 1px solid #61819f;margin-right: 20px;}
+#main .main .right .suibian ul li span:hover{color: #e3101e;}
+#main .main .right .suibian ul li .qt{border:none;color: #5e5e5e;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
